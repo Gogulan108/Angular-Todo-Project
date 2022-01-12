@@ -1,0 +1,26 @@
+.box {
+  background-color: rgb(129, 175, 160);
+  height: 80%;
+  width: 30%;
+  margin-top: 100px;
+  margin-left: 500px;
+  border-radius:5px;
+}
+label.box {
+  text-align: center;
+}
+h3{
+    margin-top:10px;
+    text-align: center;
+}
+.but-align{
+padding: 5px 20px;
+margin-top:20px;
+margin-left: 100px;
+margin-bottom:5px;
+border-radius: 10px;
+box-shadow: 10px;
+}
+#buttonspace-container{
+float: right;
+}

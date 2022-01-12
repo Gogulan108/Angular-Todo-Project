@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="jumbotron box">
+      <h3>Login Todo App</h3><br />
+      <form [formGroup] = "LoginForm">
+        <div class="form-group">
+          <label for="fname">Username</label><br />
+          <input type="text" class="form-control" id="fname" formControlName="username" name="fname" /><br />
+        </div>
+        <div class="form-group">
+          <label for="lname">Password</label><br />
+          <input type="password" class="form-control" id="lname" formControlName="password" name="lname" />
+        </div>
+        <div class="but-align">
+          <button type="submit" class="btn btn-success" (click)="logincall()">submit</button>
+        </div>
+      </form>
+      <h6>Create New Pleaase click here <a (click)="signup()" style="color:red;text-decoration: underline;">signup</a></h6>
+    </div>
+    </div>
+  </div>
+  
+

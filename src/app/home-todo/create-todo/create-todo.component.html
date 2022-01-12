@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+<div>
+    <form [formGroup] = "createForm">
+      <label for="fname">Task Name:</label><br />
+      <input type="text" id="fname" formControlName="task_name" name="Tname" /><br />
+      <label for="lname">Task Description:</label><br />
+      <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
+        formControlName="task_description" name="Tdescription" >
+      </textarea><br />
+      <label for="fname">Status:</label><br />
+      <div class="form-check">
+        <input class="form-check-input" type="radio" formControlName="status" value="IN_PROGRESS"  id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          IN_PROGRESS
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" formControlName="status" value="HOLD"  id="flexRadioDefault2" >
+        <label class="form-check-label" for="flexRadioDefault2">
+          HOLD
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" formControlName="status" value="COMPLETED"  id="flexRadioDefault2" >
+        <label class="form-check-label" for="flexRadioDefault2">
+          COMPLETED
+        </label>
+      </div>
+      <label for="fname">Priority:</label><br />
+      <div class="form-check">
+        <input class="form-check-input" type="radio" formControlName="priority" value="LOW"  id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          low
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" formControlName="priority" name="priority" id="priority"value="MEDIUM" id="flexRadioDefault2" >
+        <label class="form-check-label" for="flexRadioDefault2">
+          medium
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" formControlName="priority" value="HIGH"  id="flexRadioDefault2" >
+        <label class="form-check-label" for="flexRadioDefault2">
+           high
+        </label>
+      </div>
+      <label for="lname">Start Date:</label><br />
+      <input type="date" id="start_date" formControlName="start_date" name="start_date" /><br />
+      <label for="lname">End Date:</label><br />
+      <input type="date" id="end_date" formControlName="end_date" name="end_date" /><br />
+      <button type="submit" class="btn btn-success" (click)="create()">Add New</button>
+    </form>
+</div>
